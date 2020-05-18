@@ -1,0 +1,26 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+.background{
+    background-color: rgb(84, 56, 187);
+    width:100vw;
+    height: 100vh;
+    color: white;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    font-weight: 700;
+    font-size: larger;
+    
+}
+
+.title-des{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
