@@ -8,6 +8,7 @@ body{
     width:100vw;
     height: 100vh;
     color: white;
+    overflow: auto;
 }
 
 .title{
@@ -57,4 +58,67 @@ body{
    background-color: white;
    right: 50px;
    bottom: 75px;
+}
+
+.man{
+    position: relative;
+    bottom: 340px;
+    left: 45px;
+}
+
+.man_head{
+    height: 60px;
+  width: 60px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: none;
+}
+
+.man_body{
+    position: relative;
+    bottom: 10px;
+    width: 3px;
+    height: 120px;
+    background-color: #bbb;
+    display: none;
+}
+
+.man_right-arm, .man_left-arm, .man_right-leg, .man_left-leg{
+    width: 40px;
+    height: 3px;
+    background-color: #bbb;
+    position: relative;
+}
+
+.man_right-arm, .man_left-arm{
+    bottom: 100px;
+}
+
+
+
+.man_right-arm{
+    transform: rotateZ(50deg);
+    right: 14px;
+    display: none;
+}
+
+.man_left-arm{
+    transform: rotateZ(-50deg);
+    left: 13px;
+    bottom: 115px;
+    display: none;
+}
+
+.man_right-leg{
+    transform: rotateZ(-50deg);
+    right: 15px;
+    bottom: 33px;
+    display: none;
+}
+
+.man_left-leg{
+    transform: rotateZ(50deg);
+    bottom: 45px;
+    left: 15px;
+    display: none;
 }
