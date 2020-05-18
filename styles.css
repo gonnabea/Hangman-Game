@@ -122,3 +122,12 @@ body{
     left: 15px;
     display: none;
 }
+
+.input-area{
+    display: flex;
+    justify-content: center;
+}
+
+.keyword_area{
+    margin-right: 5px;
+}
