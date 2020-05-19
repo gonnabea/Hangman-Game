@@ -7,7 +7,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section class="background">
+    <div class="modal-container" id="modalContainer">
+        <div class="modal_lose" id="loseModal">
+            <div class="lose-msg">아쉽게도, 실패하셨군요 😢</div>
+            <button class="replay" id="replayBtn">다시 시도!</button>
+        </div>
+    </div>
+    <div class="modal_win" id="winModal"></div>
+    <section class="background" id="background">
         <div class="title">행맨게임</div>
         <div class="title-des">
             글자를 입력하여 숨겨진 글자를 찾아보세요!😉
@@ -28,7 +35,6 @@
         </div>
         </section>
         <div class="input-area" id="inputArea">
-            <div class="word-area" id="wordArea"></div>
 
         </div>
     </section>
