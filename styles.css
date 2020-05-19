@@ -61,7 +61,7 @@ body{
 }
 
 .man{
-    position: relative;
+    position: absolute;
     bottom: 340px;
     left: 45px;
 }
@@ -71,7 +71,7 @@ body{
   width: 60px;
   background-color: #bbb;
   border-radius: 50%;
-  display: none;
+  opacity: 0;
 }
 
 .man_body{
@@ -80,7 +80,7 @@ body{
     width: 3px;
     height: 120px;
     background-color: #bbb;
-    display: none;
+    opacity: 0;
 }
 
 .man_right-arm, .man_left-arm, .man_right-leg, .man_left-leg{
@@ -99,28 +99,28 @@ body{
 .man_right-arm{
     transform: rotateZ(50deg);
     right: 14px;
-    display: none;
+    opacity: 0;
 }
 
 .man_left-arm{
     transform: rotateZ(-50deg);
     left: 13px;
     bottom: 115px;
-    display: none;
+    opacity: 0;
 }
 
 .man_right-leg{
     transform: rotateZ(-50deg);
     right: 15px;
     bottom: 33px;
-    display: none;
+    opacity: 0;
 }
 
 .man_left-leg{
     transform: rotateZ(50deg);
     bottom: 45px;
     left: 15px;
-    display: none;
+    opacity: 0;
 }
 
 .input-area{
@@ -130,4 +130,19 @@ body{
 
 .keyword_area{
     margin-right: 5px;
+}
+
+.word-area{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    
+}
+
+.show-words{
+    position: relative;
+    font-size: 25px;
+    margin-right: 14px;
+    bottom:15px;
+    opacity: 0;
 }
