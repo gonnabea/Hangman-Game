@@ -1,6 +1,7 @@
 body{
     margin:0;
     padding: 0;
+    background-color: black;
 }
 
 .background{
@@ -8,7 +9,7 @@ body{
     width:100vw;
     height: 100vh;
     color: white;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .title{
@@ -61,9 +62,10 @@ body{
 }
 
 .man{
-    position: absolute;
+    position: relative;
     bottom: 340px;
     left: 45px;
+    
 }
 
 .man_head{
@@ -126,6 +128,8 @@ body{
 .input-area{
     display: flex;
     justify-content: center;
+    position: relative;
+    bottom: 35%;
 }
 
 .keyword_area{
