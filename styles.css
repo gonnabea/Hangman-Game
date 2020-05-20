@@ -217,8 +217,15 @@ body{
 
 .typed{
     position: absolute;
-    right: 30vw;
+    right: 20vw;
 }
+
+@media screen and (max-width: 800px) {
+    .typed {
+        top: 60vh;
+        right: 10vw;
+    }
+  }
 
 @keyframes errSlider{
     from{
