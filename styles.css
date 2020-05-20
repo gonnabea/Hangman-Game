@@ -162,7 +162,7 @@ body{
     background-color: rgba(0,0,0,0.3);
 }
 
-.modal_lose{
+.modal_lose, .modal_win{
     position: fixed;
     background-color: rgba(255, 255, 255);
     width: 250px;
@@ -170,8 +170,23 @@ body{
     margin-left: auto;
     z-index: 10;
     border-radius: 10px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    font-weight: 700;
+}
+
+.modal-msg{
+    display: flex;
+    justify-content: center;
+}
+
+.replay{
+    border: none;
+    border-radius: 5px;
+    background-color: royalblue;
+    color: white;
+    outline: none;
+    cursor: pointer;
 }
