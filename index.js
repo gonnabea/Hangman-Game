@@ -38,7 +38,7 @@ function ramdomWord(){
 function handleTyping(e){
     typeRec.map(typing => {
         if(typing === e.key){
-            console.log("이미 입력하신 키입니다");
+            throw `The user already used this word : "${e.key}"`;
         }
     })
     typeRec.push(e.key);
