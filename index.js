@@ -3,7 +3,10 @@ manPart = document.getElementsByClassName("man-part"),
 modalContainer = document.getElementById("modalContainer"),
 replayBtn = document.getElementById("replayBtn"),
 loseModal = document.getElementById("loseModal"),
-modalMsg = document.getElementById("modal-msg");
+modalMsg = document.getElementById("modal-msg"),
+errorSlider= document.getElementById("errorSlider"),
+sliderMsg = document.getElementById("sliderMsg"),
+typedSpell = document.getElementById("typedSpell");
 
 let keyword = "";
 let j = 0;
@@ -38,11 +41,16 @@ function ramdomWord(){
 function handleTyping(e){
     typeRec.map(typing => {
         if(typing === e.key){
-            throw `The user already used this word : "${e.key}"`;
+            errorSlider.style.display = "flex";
+            errorSlider.style.animation = "errSlider 0.5s forwards";
+            setTimeout(() => errorSlider.style.animation = "revertSlider 0.5s forwards", 2000);
+            sliderMsg.innerHTML = `이미 입력하신 철자입니다. (${e.key})`
+            throw `The user already used this word : "${e.key}"`; // 이미 입력했던 철자 인식 & block
         }
     })
     typeRec.push(e.key);
     console.log(e.key);
+    typedSpell.innerHTML = typeRec;
     let match = false;
     for(let i=0; i<keyword.length; i++){
         if(e.key === keyword[i]){
@@ -92,6 +100,7 @@ function restart(){
     matchNum = [];
     matchArr = [];
     typeRec = [];
+    typedSpell.innerHTML = "";
     ramdomWord();
 }
 

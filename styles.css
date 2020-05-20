@@ -2,6 +2,7 @@ body{
     margin:0;
     padding: 0;
     background-color: black;
+    overflow:hidden;
 }
 
 .background{
@@ -189,4 +190,50 @@ body{
     color: white;
     outline: none;
     cursor: pointer;
+}
+
+.error-slider{
+    position: absolute;
+    color:white;
+    bottom: 0%;
+    width: 100%;
+    height: 10%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider_msg{
+    background-color: rgba(0,0,0,0.3);
+    width:25%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40vw;
+    border-radius: 10px;
+    
+}
+
+.typed{
+    position: absolute;
+    right: 30vw;
+}
+
+@keyframes errSlider{
+    from{
+        transform: translateY(15vh);
+    }
+    to{
+        transform: translateY(0vh);
+    }
+}
+
+@keyframes revertSlider{
+    from{
+        transform: translateY(0vh);
+    }
+    to{
+        transform: translateY(15vh);
+    }
 }
